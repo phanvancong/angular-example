@@ -1,0 +1,20 @@
+<button (click)="onStartTimer()">Start Timer</button>
+<button (click)="onStopTimer()">Stop Timer</button>
+
+<hr>
+<label>Select with-ping files</label>
+<input type="file" (change)="onSelectedFiles($event, true)" multiple="true">
+
+<hr>
+<label>Select no-ping files</label>
+<input type="file" (change)="onSelectedFiles($event, false)" multiple="true">
+
+<hr>
+<button (click)="uploadSelectedFiles()">upload all</button>
+
+<hr>
+<div class="event-log">
+  <label style="display: block;">Event log</label>
+  <textarea readonly class="event-log-contents" #eventLog></textarea>
+</div>
+

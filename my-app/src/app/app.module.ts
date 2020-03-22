@@ -8,11 +8,13 @@ import { NgmatTableComponent } from './ngmat-table/ngmat-table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgmatTableComponent
+    NgmatTableComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
