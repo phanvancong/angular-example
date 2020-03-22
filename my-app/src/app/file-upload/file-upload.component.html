@@ -1,13 +1,18 @@
-<button (click)="onStartTimer()">Start Timer</button>
-<button (click)="onStopTimer()">Stop Timer</button>
+<h2>File Upload</h2>
 
 <hr>
 <label>Select with-ping files</label>
 <input type="file" (change)="onSelectedFiles($event, true)" multiple="true">
 
 <hr>
-<label>Select no-ping files</label>
-<input type="file" (change)="onSelectedFiles($event, false)" multiple="true">
+<div>
+
+  <label>Select no-ping files</label>
+  <input type="file" (change)="onSelectedFiles($event, false)" multiple="true">
+</div>
+<div>
+  <label>elapsed time (seconds): </label><span [innerText]="counter"></span>
+</div>
 
 <hr>
 <button (click)="uploadSelectedFiles()">upload all</button>
